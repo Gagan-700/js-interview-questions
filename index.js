@@ -5,6 +5,32 @@ import './style.css';
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
+//function statement aka function declaration--
+// function a (){
+//   console.log('hi statement') | Hoisting works
+// }
+
+//function expression----
+// var a = function(){
+//   console.log('hi expression') | Hoisting does't work
+// }
+
+//Anonymous function-----
+// function (){
+ // It is used where functions are used as values like in function expression.
+// }
+
+// Named function expression-----
+// var a = function xyz(){
+//   console.log('hi expression') | Hoisting does't work
+// }
+
+//Diff b/w parameter & arguments-----
+// function a (param1,param2){ | parameters
+//   console.log('hi statement') | Hoisting works
+// }
+// a(1,2) | arguments
+
 //remove numbers from string------
 // var s = 'good123jaiswal'
 // var r = s.replace(/[0-9]/g,'')
