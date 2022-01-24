@@ -5,20 +5,25 @@ import './style.css';
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
+//The ability of functions to be used as values and can be passed as arguments to another function is called first class function.
+
 //function statement aka function declaration--
 // function a (){
 //   console.log('hi statement') | Hoisting works
 // }
+
 
 //function expression----
 // var a = function(){
 //   console.log('hi expression') | Hoisting does't work
 // }
 
+
 //Anonymous function-----
 // function (){
  // It is used where functions are used as values like in function expression.
 // }
+
 
 // Named function expression-----
 // var a = function xyz(){
@@ -64,6 +69,8 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   console.log(true)
 // }
 
+
+
 //sort an aaray in aces & dec---
 // var a = [3,6,2,8,5,9]
 // var r = a.sort() //aces
@@ -83,6 +90,8 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   }
 // }
 
+
+
 // deep copy of an object---
 //JSON.parse(JSON.stringify(object)) will deep clone if you don't have date, functions in your object !!!
 // const a = {
@@ -100,6 +109,41 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // const clone = JSON.parse(JSON.stringify(a));
 // console.log(clone);
 // console.log(typeof clone.date);
+
+
+
+//Convert Obj into array------
+//let obj = { id: "1", name: "Test User", age: "25", profession: "Developer" };
+//Method 1: Convert the keys to Array using - Object.keys()
+//console.log(Object.keys(obj));
+// ["id", "name", "age", "profession"]
+// Method 2 Converts the Values to Array using - Object.values()
+//console.log(Object.values(obj));
+// ["1", "Test User", "25", "Developer"]
+// Method 3 Converts both keys and values using - Object.entries()
+//console.log(Object.entries(obj));
+//[["id", "1"],["name", "Test User"],["age", "25"],["profession", "Developer"]]
+
+
+
+//How to convert an Array [] to Object {} in JavaScript?----
+// let arr = ["1", "Test User", "25", "Developer"];
+// let arr1 = [
+//   ["id", "1"],
+//   ["name", "Test User"],
+//   ["age", "25"],
+//   ["profession", "Developer"],
+// ];
+//Method 1: Using Object.assign() method
+//console.log(Object.assign({}, arr));
+//{0: "1", 1: "Test User", 2: "25", 3: "Developer"}
+// Method 2 Using Spread operator
+//console.log({ ...arr });
+//{0: "1", 1: "Test User", 2: "25", 3: "Developer"}
+// Method 3: Using Object.fromEntries() method
+//console.log(Object.fromEntries(arr1));
+//{id: "1", name: "Test User", age: "25", profession: "Developer"}
+
 
 //How to check string are anagrams---
 // const areAnagram = (str1, str2) => str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('');
