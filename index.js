@@ -41,9 +41,9 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // var r = s.replace(/[0-9]/g,'')
 
 // convert string into title case-----
-// var t = r.map(x =>{
+// var t = r.split('').map(x =>{
 //   return x.charAt(0).toUpperCase()+x.slice(1)
-// }).join(" ")
+// }).join("")
 
 //revers a string----
 // var s = 'abcdefg'
