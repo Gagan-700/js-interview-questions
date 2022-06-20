@@ -150,17 +150,17 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // console.log(areAnagram('gagan','nagga'));
 
 //Count number of vowels----
-// const v = (str) =>{
-//   let c = 0;
-//   let k = 'aeiou'
-//   for(let i of str){
-//     if(k.includes(i)){
-//       c++
+// function countVowels(sentence) {
+// 	const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+//   let counts = 0;
+//   for(let i = 0; i < vowels.length; i++) {
+//     if(vowels.includes(sentence[i])) {
+//       counts++;
 //     }
 //   }
-//   console.log(c);
+//   return console.log(counts);
 // }
-// v('abvdefi')
+// countVowels('hello');
 
 // Rotate array by nth position
 // let a = [1,2,3,4,5,6]
@@ -212,3 +212,15 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   }
 // }
 // console.log(sum(2)(3)())
+
+//count number of character in a string
+// function count(s){
+//   let r = {};
+//   let count=0;
+//   s.split('').forEach((x)=>{
+//   r[x] ? r[x]++ : r[x]=1
+//   })
+//   return r
+//   }
+  
+//   console.log(count('gagan'))
