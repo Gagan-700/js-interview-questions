@@ -224,3 +224,14 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   }
   
 //   console.log(count('gagan'))
+
+//recursion example
+//countdown to 10
+//function count(n){
+//   console.log(n)
+//   let newN = n-1
+//   if(newN>0){
+//     count(n)
+//   }
+// }
+// count(10);
