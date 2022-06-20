@@ -201,9 +201,6 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   console.log(r)
 // }
 
-// a(arr);
-
-
 // Infinite currying 
 
 // let sum = function(a){
