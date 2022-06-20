@@ -180,3 +180,38 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   return chunks;
 // }
 // console.log(chunks([1,2,3,6,7,8,9],2));
+
+
+// put zeros at end of an array
+
+
+// let arr = [1,2,0,0,5,4,0,3];
+// let arr2 = [];
+
+// function a(arr){
+//   let a1 = arr.filter((x)=>{
+// 	if(x === 0){
+//   arr2.push(x)
+//   } 
+//   return x != 0;
+  
+//   })
+//   let R = a1.sort((a,b) => a-b);
+//   let r = [...R,...arr2]
+//   console.log(r)
+// }
+
+// a(arr);
+
+
+// Infinite currying 
+
+// let sum = function(a){
+//   return function(b){
+//     if(b){
+//     return sum(a+b);
+//     }
+//     return a;
+//   }
+// }
+// console.log(sum(2)(3)())
