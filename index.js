@@ -181,16 +181,15 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // console.log(a)
 
 //[1,2,3,6,7,8,9] convert to chunk of 2 = [[1,2],[3,6],[7,8],[9]]
-// let chunks = (array,size) => {
-//   let chunks = [];
-//   let i = 0;
-//   while(i<array.size){
-//     chunks.push(array.splice(i,i+size))  /// Not working now
-//     i += size;
-//   }
-//   return chunks;
-// }
-// console.log(chunks([1,2,3,6,7,8,9],2));
+const arr = [1, 2, 3, 6, 7, 8, 9];
+const chunkSize = 2;
+
+const result = [];
+for (let i = 0; i < arr.length; i += chunkSize) {
+  result.push(arr.slice(i, i + chunkSize));
+}
+
+console.log(result);
 
 
 // put zeros at end of an array
