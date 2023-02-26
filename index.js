@@ -149,18 +149,28 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // const areAnagram = (str1, str2) => str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('');
 // console.log(areAnagram('gagan','nagga'));
 
-//Count number of vowels----
-// function countVowels(sentence) {
-// 	const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
-//   let counts = 0;
-//   for(let i = 0; i < vowels.length; i++) {
-//     if(vowels.includes(sentence[i])) {
-//       counts++;
+//Count number of vowels and their frequnecy----
+// const sentence = "This is a sample sentence to count the number of vowels and their frequency.";
+
+// const vowels = ['a', 'e', 'i', 'o', 'u'];
+// const frequency = {};
+
+// let count = 0;
+// for (let i = 0; i < sentence.length; i++) {
+//   const char = sentence[i].toLowerCase();
+//   if (vowels.includes(char)) {
+//     count++;
+//     if (frequency[char]) {
+//       frequency[char]++;
+//     } else {
+//       frequency[char] = 1;
 //     }
 //   }
-//   return console.log(counts);
 // }
-// countVowels('hello');
+
+// console.log(`The sentence has ${count} vowels.`);
+// console.log("Frequency of vowels:");
+// console.log(frequency);
 
 // Rotate array by nth position
 // let a = [1,2,3,4,5,6]
