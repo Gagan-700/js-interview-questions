@@ -172,6 +172,7 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // console.log("Frequency of vowels:");
 // console.log(frequency);
 
+
 // Rotate array by nth position
 // let a = [1,2,3,4,5,6]
 // for(let i = 0;i<1;i++){
