@@ -90,8 +90,6 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   }
 // }
 
-
-
 // deep copy of an object---
 //JSON.parse(JSON.stringify(object)) will deep clone if you don't have date, functions in your object !!!
 // const a = {
@@ -123,8 +121,6 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // Method 3 Converts both keys and values using - Object.entries()
 //console.log(Object.entries(obj));
 //[["id", "1"],["name", "Test User"],["age", "25"],["profession", "Developer"]]
-
-
 
 //How to convert an Array [] to Object {} in JavaScript?----
 // let arr = ["1", "Test User", "25", "Developer"];
@@ -181,15 +177,15 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // console.log(a)
 
 //[1,2,3,6,7,8,9] convert to chunk of 2 = [[1,2],[3,6],[7,8],[9]]
-const arr = [1, 2, 3, 6, 7, 8, 9];
-const chunkSize = 2;
+// const arr = [1, 2, 3, 6, 7, 8, 9];
+// const chunkSize = 2;
 
-const result = [];
-for (let i = 0; i < arr.length; i += chunkSize) {
-  result.push(arr.slice(i, i + chunkSize));
-}
+// const result = [];
+// for (let i = 0; i < arr.length; i += chunkSize) {
+//   result.push(arr.slice(i, i + chunkSize));
+// }
 
-console.log(result);
+// console.log(result);
 
 
 // put zeros at end of an array
@@ -245,3 +241,9 @@ console.log(result);
 //   }
 // }
 // count(10);
+
+// function flatten(arr) {
+//   return arr.reduce(function (flat, toFlatten) {
+//     return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+//   }, []);
+// }
