@@ -12,18 +12,15 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   console.log('hi statement') | Hoisting works
 // }
 
-
 //function expression----
 // var a = function(){
 //   console.log('hi expression') | Hoisting does't work
 // }
 
-
 //Anonymous function-----
 // function (){
- // It is used where functions are used as values like in function expression.
+// It is used where functions are used as values like in function expression.
 // }
-
 
 // Named function expression-----
 // var a = function xyz(){
@@ -69,8 +66,6 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   console.log(true)
 // }
 
-
-
 //sort an aaray in aces & dec---
 // var a = [3,6,2,8,5,9]
 // var r = a.sort() //aces
@@ -108,8 +103,6 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // console.log(clone);
 // console.log(typeof clone.date);
 
-
-
 //Convert Obj into array------
 //let obj = { id: "1", name: "Test User", age: "25", profession: "Developer" };
 //Method 1: Convert the keys to Array using - Object.keys()
@@ -140,7 +133,6 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //console.log(Object.fromEntries(arr1));
 //{id: "1", name: "Test User", age: "25", profession: "Developer"}
 
-
 //How to check string are anagrams---
 // const areAnagram = (str1, str2) => str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('');
 // console.log(areAnagram('gagan','nagga'));
@@ -168,7 +160,6 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // console.log("Frequency of vowels:");
 // console.log(frequency);
 
-
 // Rotate array by nth position
 // let a = [1,2,3,4,5,6]
 // for(let i = 0;i<1;i++){
@@ -187,9 +178,7 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 // console.log(result);
 
-
 // put zeros at end of an array
-
 
 // let arr = [1,2,0,0,5,4,0,3];
 // let arr2 = [];
@@ -198,16 +187,18 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   let a1 = arr.filter((x)=>{
 // 	if(x === 0){
 //   arr2.push(x)
-//   } 
+//   }
 //   return x != 0;
-  
+
 //   })
+
 //   let R = a1.sort((a,b) => a-b);
 //   let r = [...R,...arr2]
 //   console.log(r)
 // }
+// a(arr);
 
-// Infinite currying 
+// Infinite currying
 
 // let sum = function(a){
 //   return function(b){
@@ -228,7 +219,7 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   })
 //   return r
 //   }
-  
+
 //   console.log(count('gagan'))
 
 //recursion example
@@ -247,3 +238,6 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //     return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
 //   }, []);
 // }
+// let a = [1, 2, [3, 4, [5, 6]]];
+// let result = flatten(a)
+// console.log(result);
