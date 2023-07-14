@@ -241,3 +241,30 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // let a = [1, 2, [3, 4, [5, 6]]];
 // let result = flatten(a)
 // console.log(result);
+
+// function get(obj, path, value) {
+//   for(let key in obj) {
+//       if(obj.hasOwnProperty(key)) {
+//           if(typeof obj[key] === 'object') {
+//               get(obj[key])
+//           } else {
+//               console.log(obj[key])
+//           }
+//       }
+//   }
+// }
+
+
+// const obj = {
+//   a: {
+//       b: {
+//           c: {
+//               d: 10
+//           }
+//       }
+//   }
+// }
+
+
+//get(obj, 'a.b.c.d'); output = 10
+//get(obj, 'a.b.c.x.y.z', 100); default value = 100
