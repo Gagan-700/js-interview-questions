@@ -254,7 +254,6 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   }
 // }
 
-
 // const obj = {
 //   a: {
 //       b: {
@@ -264,7 +263,15 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //       }
 //   }
 // }
-
-
 //get(obj, 'a.b.c.d'); output = 10
 //get(obj, 'a.b.c.x.y.z', 100); default value = 100
+
+//valid palindrom
+
+// const isPalindrome = s => {
+//   s = s.toLowerCase().replace(/[^a-z0-9]/gi,'');
+//   for (let i = 0, j = s.length - 1; i <= j; i++, j--) {
+//     if (s.charAt(i) !== s.charAt(j)) return false;
+//   }
+//   return true;
+// }
