@@ -200,12 +200,12 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   result.push(arr.slice(i, i + chunkSize));
 // }
 // console.log(result);
+
+
+
 // put zeros at end of an array
 // let arr = [1,2,0,0,5,4,0,3];
 // let arr2 = [];
-
-
-
 // function a(arr){
 //   let a1 = arr.filter((x)=>{
 // 	if(x === 0){
@@ -352,7 +352,7 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //     if (obj.hasOwnProperty(key)) {
 //       const newKey = prefix ? `${prefix}.${key}` : key;
 
-//       if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {
+//       if (typeof obj[key] === 'object') {
 //         Object.assign(flattened, flattenObject(obj[key], newKey));
 //       } else {
 //         flattened[newKey] = obj[key];
