@@ -309,7 +309,7 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //get(obj, 'a.b.c.x.y.z', 100); default value = 100
 
 
-//valid palindrom
+//valid palindrom----------------->
 // const isPalindrome = s => {
 //   s = s.toLowerCase().replace(/[^a-z0-9]/gi,'');
 //   for (let i = 0, j = s.length - 1; i <= j; i++, j--) {
@@ -335,10 +335,44 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //       cache[str] = result;
 //       return result;
 //     }
-
 //   }
 // }
 // const addTwo = (a,b) => a+b; -----------> function defined here.
 // const ans = memo(addTwo);
 // console.log(ans(1,2));
 // console.log(ans(1,2));
+
+
+
+//To flatten deeply nested object.
+// function flattenObject(obj, prefix = '') {
+//   let flattened = {};
+
+//   for (let key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//       const newKey = prefix ? `${prefix}.${key}` : key;
+
+//       if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {
+//         Object.assign(flattened, flattenObject(obj[key], newKey));
+//       } else {
+//         flattened[newKey] = obj[key];
+//       }
+//     }
+//   }
+
+//   return flattened;
+// }
+// Example usage:
+// const nestedObject = {
+//   a: 5,
+//   b:{
+//     c:3,
+//     f:8,
+//     e:{
+//       g:1
+//     }
+//   },
+//   q:2
+// };
+// const flattenedObject = flattenObject(nestedObject);
+// console.log(flattenedObject);
