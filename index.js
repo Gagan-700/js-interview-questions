@@ -7,25 +7,30 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 //The ability of functions to be used as values and can be passed as arguments to another function is called first class function.
 
+
 //function statement aka function declaration--
 // function a (){
 //   console.log('hi statement') | Hoisting works
 // }
+
 
 //function expression----
 // var a = function(){
 //   console.log('hi expression') | Hoisting does't work
 // }
 
+
 //Anonymous function-----
 // function (){
 // It is used where functions are used as values like in function expression.
 // }
 
+
 // Named function expression-----
 // var a = function xyz(){
 //   console.log('hi expression') | Hoisting does't work
 // }
+
 
 //Diff b/w parameter & arguments-----
 // function a (param1,param2){ | parameters
@@ -33,30 +38,37 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // }
 // a(1,2) | arguments
 
+
 //remove numbers from string------
 // var s = 'good123jaiswal'
 // var r = s.replace(/[0-9]/g,'')
+
 
 // convert string into title case-----
 // var t = r.split('').map(x =>{
 //   return x.charAt(0).toUpperCase()+x.slice(1)
 // }).join("")
 
+
 //revers a string----
 // var s = 'abcdefg'
 // var r = s.split('').reverse().join('');
+
 
 //revers a sentence----
 // var s = "hi my name is gagan"
 // var r = s.split(' ').reverse().join(' ')
 
+
 //revers sentence and the words in sentence---
 // var s = 'hi my name is gagan'
 // var p = s.split(' ').map(x=>{ return x.split('').reverse().join('')}).reverse().join(" ");
 
+
 //find unique element in string/aaray-----
 // var a = [1,2,4,4,5,6,789,3,6,9,55,3,3]
 // var r = [...new Set(a)];
+
 
 // check if aaray/string has all unique element---
 // var a = [1,22,3,1,2,4,5,8,4,9,5]
@@ -65,6 +77,8 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // }else{
 //   console.log(true)
 // }
+
+
 
 //sort an aaray in aces & dec---
 // var a = [3,6,2,8,5,9]
@@ -85,6 +99,8 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   }
 // }
 
+
+
 // deep copy of an object---
 //JSON.parse(JSON.stringify(object)) will deep clone if you don't have date, functions in your object !!!
 // const a = {
@@ -103,6 +119,8 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // console.log(clone);
 // console.log(typeof clone.date);
 
+
+
 //Convert Obj into array------
 //let obj = { id: "1", name: "Test User", age: "25", profession: "Developer" };
 //Method 1: Convert the keys to Array using - Object.keys()
@@ -114,6 +132,8 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // Method 3 Converts both keys and values using - Object.entries()
 //console.log(Object.entries(obj));
 //[["id", "1"],["name", "Test User"],["age", "25"],["profession", "Developer"]]
+
+
 
 //How to convert an Array [] to Object {} in JavaScript?----
 // let arr = ["1", "Test User", "25", "Developer"];
@@ -133,16 +153,18 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //console.log(Object.fromEntries(arr1));
 //{id: "1", name: "Test User", age: "25", profession: "Developer"}
 
+
+
 //How to check string are anagrams---
 // const areAnagram = (str1, str2) => str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('');
 // console.log(areAnagram('gagan','nagga'));
 
+
+
 //Count number of vowels and their frequnecy----
 // const sentence = "This is a sample sentence to count the number of vowels and their frequency.";
-
 // const vowels = ['a', 'e', 'i', 'o', 'u'];
 // const frequency = {};
-
 // let count = 0;
 // for (let i = 0; i < sentence.length; i++) {
 //   const char = sentence[i].toLowerCase();
@@ -155,10 +177,11 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //     }
 //   }
 // }
-
 // console.log(`The sentence has ${count} vowels.`);
 // console.log("Frequency of vowels:");
 // console.log(frequency);
+
+
 
 // Rotate array by nth position
 // let a = [1,2,3,4,5,6]
@@ -167,21 +190,21 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // }
 // console.log(a)
 
+
+
 //[1,2,3,6,7,8,9] convert to chunk of 2 = [[1,2],[3,6],[7,8],[9]]
 // const arr = [1, 2, 3, 6, 7, 8, 9];
 // const chunkSize = 2;
-
 // const result = [];
 // for (let i = 0; i < arr.length; i += chunkSize) {
 //   result.push(arr.slice(i, i + chunkSize));
 // }
-
 // console.log(result);
-
 // put zeros at end of an array
-
 // let arr = [1,2,0,0,5,4,0,3];
 // let arr2 = [];
+
+
 
 // function a(arr){
 //   let a1 = arr.filter((x)=>{
@@ -191,15 +214,15 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   return x != 0;
 
 //   })
-
 //   let R = a1.sort((a,b) => a-b);
 //   let r = [...R,...arr2]
 //   console.log(r)
 // }
 // a(arr);
 
-// Infinite currying
 
+
+// Infinite currying
 // let sum = function(a){
 //   return function(b){
 //     if(b){
@@ -209,6 +232,8 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   }
 // }
 // console.log(sum(2)(3)())
+
+
 
 //count number of character in a string
 // function count(s){
@@ -222,6 +247,8 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
 //   console.log(count('gagan'))
 
+
+
 //recursion example
 //countdown to 10
 //function count(n){
@@ -233,14 +260,30 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 // }
 // count(10);
 
+
+
 // function flatten(arr) {
 //   return arr.reduce(function (flat, toFlatten) {
 //     return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
 //   }, []);
 // }
+// Another approach -----> 
+// function flattenArray(arr) {
+//   return arr.reduce((pre,curr) => {
+//     if(Array.isArray(curr)) {
+//       pre = pre.concat(flattenArray(curr));
+//     } else {
+//       pre.push(curr);
+//     }
+//     return pre;
+//   },[])
+// }
+// console.log(flattenArray([[1,2],[[2,4,[3,[5,8]]]]]));
 // let a = [1, 2, [3, 4, [5, 6]]];
 // let result = flatten(a)
 // console.log(result);
+
+
 
 // function get(obj, path, value) {
 //   for(let key in obj) {
@@ -275,3 +318,28 @@ appDiv.innerHTML = `<h1>JS Starter</h1>`;
 //   }
 //   return true;
 // }
+
+
+//memoization code for adding two number:-
+// here we are passing a function in this case addTow, use can any function and have to define that function just like addTwo();
+//
+// const memo = (fn) => {
+//   const cache = {};
+//   return (...args) => {
+//     const str = JSON.stringify(args);
+//     if(str in cache) {
+//       console.log('returning from cache');
+//       return cache[str];
+//     } else {
+//       console.log('returning from function');
+//       const result = fn(...args);
+//       cache[str] = result;
+//       return result;
+//     }
+
+//   }
+// }
+// const addTwo = (a,b) => a+b; -----------> function defined here.
+// const ans = memo(addTwo);
+// console.log(ans(1,2));
+// console.log(ans(1,2));
